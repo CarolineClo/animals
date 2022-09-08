@@ -29,14 +29,15 @@ function prepareObjects(jsonData) {
       description: "funny",
     };
     // something like
+
     animal.name = jsonObject.fullname.split(` `)[0];
     animal.type = jsonObject.fullname.split(` `)[3];
-    animal.description = jsonObject.fullname.split(` `)[2];
-
-    console.log(animal.name);
-    console.log(animal.description);
-    console.log(animal.type);
-    console.log(jsonObject.age);
+    animal.desc = jsonObject.fullname.split(` `)[2];
+    animal.age = jsonObject.age;
+    //
+    console.log(animal);
+    allAnimals.push(animal);
+    console.log(allAnimals);
 
     // TODO: MISSING CODE HERE !!!
   });
